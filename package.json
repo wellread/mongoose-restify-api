@@ -1,0 +1,27 @@
+{
+  "name": "mongoose-restify-api",
+  "version": "1.0.0",
+  "description": "Mongo(ose) Restify Toy Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wellread/mongoose-restify-api"
+  },
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "restify",
+    "api",
+    "server",
+    "toy"
+  ],
+  "author": "Emmanuel Mwangi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellread/mongoose-restify-api/issues"
+  },
+  "homepage": "https://github.com/wellread/mongoose-restify-api"
+}
