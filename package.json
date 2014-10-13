@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/wellread/mongoose-restify-api/issues"
   },
-  "homepage": "https://github.com/wellread/mongoose-restify-api"
+  "homepage": "https://github.com/wellread/mongoose-restify-api",
+  "dependencies": {
+    "async": "^0.9.0",
+    "mongoose": "^3.8.17",
+    "restify": "^2.8.3"
+  }
 }
