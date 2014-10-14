@@ -1,3 +1,8 @@
+/*jslint node: true */
+/*jshint strict:false */
+/* jshint -W097 */
+
+'use strict';
 // *******************
 // ** app/server.js **
 var restify =  require('restify');
@@ -7,12 +12,12 @@ var mongoose = require('mongoose');
 // **  Bootstrapping ********
 
 // connect to mongodb database rest-api on localhost
-mongoose.connect('mongodb://localhost/rest-api')
+mongoose.connect('mongodb://localhost/rest-api');
 
 // create restify serer named 'rest-api'
 var server = restify.createServer({
     name: 'rest-api',
-})
+});
 
 // Use body parser middleware to parse json post body
 server.use(restify.bodyParser());

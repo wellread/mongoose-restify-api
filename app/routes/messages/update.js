@@ -4,7 +4,7 @@ var Messages = require('../../models/Messages');
 module.exports = function(req, res, next) {
 
     if (!req.params.content) {
-        return next(new restify.MissingParameterError('Missing :content param'))
+        return next(new restify.MissingParameterError('Missing :content param'));
     }
 
     Messages.findByIdAndUpdate(req.params.id,
@@ -27,4 +27,4 @@ module.exports = function(req, res, next) {
             res.send(message);
         }
     );
-}
+};

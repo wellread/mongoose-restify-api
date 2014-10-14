@@ -16,4 +16,4 @@ module.exports = function(req, res, next) {
         // send all messages
         res.send(messages);
     });
-}
+};

@@ -17,4 +17,4 @@ module.exports = function(req, res, next) {
         // returning deleted message on success
         res.send(message);
     });
-}
+};
