@@ -12,8 +12,13 @@ gulp.task('lint', function() {
         .pipe($.jshint.reporter('default'));
 })
 
+gulp.task('test', function() {
+    return gulp.src('spec/test.js')
+        .pipe($.jasmine());
+})
+
 gulp.task('default', ['lint']);
 
 gulp.task('watch', function(){
-    gulp.watch(['app/*.js','app/**/*.js'], ['lint']);
+    gulp.watch(['app/*.js','app/**/*.js','spec/*.js'], ['lint','test']);
 })
